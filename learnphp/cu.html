@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Entry Form</title>
+</head>
+<body>
+    <h1>Enter Your Academic Details</h1>
+    <form action="process_form.php" method="POST">
+        <label for="roll_no">University Roll No.:</label>
+        <input type="text" id="roll_no" name="roll_no" required><br><br>
+
+        <label for="reg_no">University Registration No.:</label>
+        <input type="text" id="reg_no" name="reg_no" required><br><br>
+
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester" required>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+            <option value="V">V</option>
+            <option value="VI">VI</option>
+        </select><br><br>
+
+        <label for="session">Academic Session:</label>
+        <input type="text" id="session" name="session" required><br><br>
+
+        <label for="cc6">Marks in CC6 (out of 50):</label>
+        <input type="number" id="cc6" name="cc6" min="0" max="50" required><br><br>
+
+        <label for="cc7">Marks in CC7 (out of 50):</label>
+        <input type="number" id="cc7" name="cc7" min="0" max="50" required><br><br>
+
+        <label for="cc8">Marks in CC8 (out of 50):</label>
+        <input type="number" id="cc8" name="cc8" min="0" max="50" required><br><br>
+
+        <label for="sec">Marks in SEC (out of 50):</label>
+        <input type="number" id="sec" name="sec" min="0" max="50" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
