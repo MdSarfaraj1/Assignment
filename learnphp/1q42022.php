@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 $text=$_POST["text"];
 echo $text."<br>";
 $output=str_replace(range(0,9),'',$text);
-$output=str_replace([' ',"\t","\n","\r"],'',$output);
+$output = preg_replace('/\s+/', '', $output);
 echo $output;
 }
 
